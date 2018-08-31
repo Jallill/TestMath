@@ -9,10 +9,18 @@ namespace TestMaths {
 
         string convertedMathProblem { get; set;}
         string convertedResult { get; set; }
+        string difficulty { get; set; }
         List<int> numbers { get; set; }
         List<string> operators { get; set; }
         int result { get; set; }
 
+        public MathProblem(string difficulty) {
+            switch (difficulty) {
+                case ("easy"):
+                    
+                    break;
+            }
+        }
 
     }
 }

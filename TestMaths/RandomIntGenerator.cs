@@ -17,16 +17,13 @@ namespace TestMaths {
 
         private static Int64 BayToInt64(byte[] bytes, int index) {
             return BitConverter.ToInt64(bytes, index);
-            //return value = value > 0 ? value : value * -1;
+            
         }
 
         public static Int64 RNGbyCant(int cant, bool onlyPositive) {
-            return GenerateRNGNewInstance(8) % (Int64)Math.Pow(10,cant);
+            Int64 value = GenerateRNGNewInstance(8) % (Int64)Math.Pow(10,cant);
+            return value = onlyPositive ? value : value * -1;
         }
-
-        //public static Int64 RNGbyRange(Int64 minVal, Int64 maxVal, bool onlyPositive) {
-
-        //}
 
         public static Int64 RNG(bool onlyPositive) {
             Int64 num = (Int64)(GenerateRNGNewInstance(8)% 100)/5;

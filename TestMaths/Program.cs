@@ -9,7 +9,7 @@ namespace TestMaths {
     class Program {
         
         static void Main(string[] args) {
-            
+
             Console.ReadKey();
         }
     }
